@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation détaillée de Mortis, personnage emblématique de Brawl Stars.">
+    <title>Mortis - Brawl Stars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            text-align: center;
+            background-color: #6a0dad;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav button {
+            background-color: #6a0dad;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #9b59b6;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6a0dad;
+            color: white;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mortis - Brawl Stars</h1>
+        <p>Découvrez tout sur Mortis, le maître des ténèbres et des chauves-souris !</p>
+    </header>
+    <nav>
+        <button onclick="showSection('description')">Description</button>
+        <button onclick="showSection('gadgets')">Gadgets</button>
+        <button onclick="showSection('statistiques')">Statistiques</button>
+        <button onclick="showSection('comment_jouer')">Comment jouer</button>
+    </nav>
+    <section id="description">
+        <h2>Description</h2>
+        <p>Mortis est un Brawler mythique qui excelle dans les attaques rapprochées et la mobilité. Avec son look de vampire et son attitude mystérieuse, il est l'un des personnages les plus appréciés des joueurs.</p>
+        <img src="mortis.jpg" alt="Mortis - Brawl Stars">
+        <p>Mortis manie une pelle pour ses attaques, et sa vitesse de déplacement rapide lui permet de foncer sur ses ennemis ou d'esquiver leurs tirs. Sa capacité à soigner grâce à son attaque super le rend redoutable en combat rapproché.</p>
+    </section>
+    <section id="gadgets">
+        <h2>Gadgets</h2>
+        <ul>
+            <li><strong>Combo Spinner</strong> : Mortis fait tourner sa pelle autour de lui, infligeant des dégâts à tous les ennemis proches.</li>
+            <li><strong>Survival Shovel</strong> : Augmente temporairement la vitesse de rechargement de ses attaques.</li>
+        </ul>
+    </section>
+    <section id="statistiques">
+        <h2>Statistiques</h2>
+        <table>
+            <tr>
+                <th>Caractéristique</th>
+                <th>Valeur</th>
+            </tr>
+            <tr>
+                <td>Points de vie (niveau max)</td>
+                <td>4480</td>
+            </tr>
+            <tr>
+                <td>Dégâts par attaque</td>
+                <td>1260</td>
+            </tr>
+            <tr>
+                <td>Dégâts de l'attaque super</td>
+                <td>1260 (par chauve-souris)</td>
+            </tr>
+            <tr>
+                <td>Vitesse</td>
+                <td>Très rapide</td>
+            </tr>
+        </table>
+    </section>
+    <section id="comment_jouer">
+        <h2>Comment jouer</h2>
+        <p>Pour maîtriser Mortis, il faut apprendre à jouer de manière agressive tout en évitant les dégâts inutiles. Utilisez sa mobilité pour esquiver et ses capacités pour surprendre vos adversaires :</p>
+        <ul>
+            <li>Évitez les Brawlers à longue portée.</li>
+            <li>Attaquez les Brawlers isolés ou à faible santé.</li>
+            <li>Utilisez votre super pour soigner en cas de besoin.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 - Site dédié à Mortis de Brawl Stars</p>
+    </footer>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>
